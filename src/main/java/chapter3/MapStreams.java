@@ -12,6 +12,8 @@ public class MapStreams {
     return (Integer y) -> x * y;
   }
   
+  //-------------------------------------------------------------------------------------------------------------------
+  
   public static void main(String[] args) {
     Integer[] intArray = new Integer[]{ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
     List<Integer> intList = new ArrayList<>(Arrays.asList(intArray));

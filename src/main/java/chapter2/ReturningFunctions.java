@@ -36,6 +36,13 @@ public class ReturningFunctions {
     System.out.println(MyMath.timesThree(4));
     System.out.println(MyMath.timesFour(4));
     
+    Function<Integer, Integer> fnTimesTwo = MyMath::timesTwo;
+    System.out.println(fnTimesTwo.apply(4));
+    Function<Integer, Integer> fnTimesThree = MyMath::timesThree;
+    System.out.println(fnTimesThree.apply(4));
+    Function<Integer, Integer> fnTimesFour = MyMath::timesFour;
+    System.out.println(fnTimesFour.apply(4));
+    
     System.out.println("Using functional programming:");
     Function<Integer, Integer> fnMultiplyBy2 = MyMath.createMultiplier(2);
     System.out.println(fnMultiplyBy2.apply(4));
