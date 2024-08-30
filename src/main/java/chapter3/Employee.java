@@ -5,7 +5,7 @@ public class Employee {
   private String name;
   private int age;
   private String jobTitle;
-  private Double Salary;
+  private Double salary;
   
   //-------------------------------------------------------------------------------------------------------------------
   
@@ -13,7 +13,7 @@ public class Employee {
     this.name = name;
     this.age = age;
     this.jobTitle = jobTitle;
-    Salary = salary;
+    this.salary = salary;
   }
   
   //-------------------------------------------------------------------------------------------------------------------
@@ -37,7 +37,14 @@ public class Employee {
   //-------------------------------------------------------------------------------------------------------------------
   
   public Double getSalary() {
-    return Salary;
+    return salary;
+  }
+  
+  //-------------------------------------------------------------------------------------------------------------------
+  
+  @Override
+  public String toString() {
+    return String.format("{Name: %s, Age: %d, JobTitle: %s, Salary: $%.2f}", name, age, jobTitle, salary);
   }
   
 }
