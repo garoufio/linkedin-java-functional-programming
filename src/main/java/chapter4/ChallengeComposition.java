@@ -1,8 +1,6 @@
 package chapter4;
 
 import java.util.Arrays;
-import java.util.List;
-import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 public class ChallengeComposition {
@@ -41,17 +39,17 @@ public class ChallengeComposition {
   //-------------------------------------------------------------------------------------------------------------------
   
   public static void main(String[] args) {
-    int[] numbers = { 7, 17, 13, 19, 5 };
+    //int[] numbers = { 7, 17, 13, 19, 5 };
     String[] words = {
         "apple", "banana", "cherry",
         "date", "fig", "grape",
         "kiwi", "lemon", "mango"
     };
     String s = "Hello composition";
-    int index = 3;
+    // int index = 3;
     
-    int indexOfLargestNumber = getIndexOfLargest(numbers);
-    int numLetters = countLetters(s);
+    // int indexOfLargestNumber = getIndexOfLargest(numbers);
+    // int numLetters = countLetters(s);
     
     System.out.println(getLongestWord(words));
   }
